@@ -6,6 +6,12 @@ body {
     vertical-align:baseline;
 }
 
+.big-number {
+    margin:10px;
+    font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size:240px;
+}
+
 .body-text {
     font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
 }
@@ -18,7 +24,7 @@ body {
     padding-right:20px;
     padding-top:5px;
     padding-bottom:5px;
-    background-color:goldenrod;
+    background-color:#f3ecb0;
     transition: ease-in-out 0.1s;
     border-radius:10px 10px 30px 10px;
     
@@ -26,7 +32,7 @@ body {
 
 .button:hover {
     transform:scale(0.96);
-    background-color:gold;
+    background-color:#fffbd4;
 }
 
 .button-text {
@@ -75,7 +81,6 @@ body {
 }
 
 .food-object {
-    background-color:burlywood;
     display:flex;
     flex-direction:row;
     margin-top:5px;
@@ -91,6 +96,32 @@ body {
     margin-right:5px;
     font-size:30px;
 }
+
+
+.food-type-fruit {
+    background-color:#e0bd5c;
+}
+
+.food-type-milk {
+    background-color:#e9e5c5
+}
+
+.food-type-other {
+    background-color:#8b7138;
+}
+
+.food-type-protein {
+    background-color:#ac5555
+}
+
+.food-type-starch {
+    background-color:#d8cd67;
+}
+
+.food-type-vegetable {
+    background-color:#8fd168;
+}
+
 
 .grams {
     margin-left:8px;
@@ -123,6 +154,13 @@ body {
     font-size:30px;
 }
 
+.line-break {
+    border-top:10px;
+    border-bottom:10px;
+    width:80%;
+    align-self:center;
+}
+
 .main-header {
     position:absolute;
     top:70px;
@@ -135,6 +173,15 @@ body {
     font-size:90px;
     font-variant:small-caps;
     color:antiquewhite;
+}
+
+.result-list {
+    padding:40px;
+}
+
+.result-text {
+    font-family:Trebuchet MS, sans-serif;
+    font-size:60px;
 }
 
 .sub-header {
@@ -170,13 +217,13 @@ body {
 }
 
 #calculator-main {
-    background-color:rgb(92, 177, 149);
+    background-color:#344d67;
 }
 
 #calculator-top {
     width:350px;
     border-radius: 15px 30px 0px 0px;
-    background-color:lightgreen;
+    background-color:#ade792;
 }
 
 #food-types {
@@ -190,13 +237,86 @@ body {
 }
 
 #options {
-    background-color:rgb(195, 227, 255);
+    background-color:#ade792;
     display:flex;
     border-radius:0px 0px 15px 15px;
 }
 
+#results {
+    display:none;
+}
+
+#result-carbon {
+    position:relative;
+    text-align:center;
+    -webkit-text-fill-color: antiquewhite;
+}
+
+#result-carbon-container {
+    z-index:-1;
+    background-image: url("https://edinburghsensors.com/wp-content/uploads/2020/11/Untitled-design-33-1.png");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom center;
+    position:absolute;
+    height:100%;
+    width:100%;
+    bottom:0px;
+    left:0px;
+}
+
+#result-carbon-container::before {
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px) brightness(85%);
+    pointer-events: none;
+}
+
+#result-cars {
+    position:relative;
+    text-align:center;
+    -webkit-text-fill-color: antiquewhite;
+}
+
+#result-cars-container {
+    z-index:-1;
+    background-image: url("https://static01.nyt.com/images/2016/08/30/science/30number/30number-superJumbo.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom center;
+    position:absolute;
+    height:100%;
+    width:100%;
+    bottom:0px;
+    left:0px;
+}
+
+#result-cars-container::before {
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px) brightness(85%);
+    pointer-events: none;
+}
+
+#result-cars-global {
+    text-align:center;
+}
+
+#result-everyone {
+    text-align:center;
+    background-color:rgb(182, 117, 91);
+}
+
 #window {
     overflow-y:scroll;
-    background-color:lightskyblue;
+    background-color:#6eccaf;
     height:500px;
 }

@@ -27,11 +27,13 @@
             </div>   
         </div>
         <div id="calculator-main">
+            <hr class="line-break"></hr>
             <div id="calculator">
                 <div id="calculator-top">
                     <p class="calculator-header">Carbon Calculator</p>
                 </div>
                 <div id="window">
+                    <hr class="line-break"></hr>
                 </div>
                 <div id="options">
                     <label for="food-types" class="body-text food-select">Select a food item:</label>
@@ -44,16 +46,36 @@
                     </div>
                 </div>
             </div>
+            <hr class="line-break"></hr>
         </div>
         <div id="results">
-            <div id="cars">
-
+            <div class="result-list" id="result-carbon">
+                <div id="result-carbon-container"></div>
+                <p class="result-text">Your carbon total is</p>
+                <p class="result-text">the equivalent of approximately</p>
+                <p class="big-number">??</p>
+                <p class="result-text">kilograms of carbon dioxide.</p>
             </div>
-            <div id="everyone">
-
+            <hr class="line-break"></hr>
+            <div class="result-list" id="result-everyone">
+                <p class="result-text">If everyone ate this diet for a year,</p>
+                <p class="result-text">global carbon emissions would <span id="everyone-percent">increase</span> emissions by</p>
+                <p class="big-number">??</p>
+                <p class="result-text">compared to data from 2021.</p>
             </div>
-            <div id="percent">
-
+            <hr class="line-break"></hr>
+            <div class="result-list" id="result-cars">
+                <div id="result-cars-container"></div>
+                <p class="result-text">If you ate this diet for a year,</p>
+                <p class="result-text">it emit the same amount of carbon as approximately</p>
+                <p class="big-number">??</p>
+                <p class="result-text">regular passenger cars.</p>
+            </div>
+            <hr class="line-break"></hr>
+            <div class="result-list" id="result-cars-global">
+                <p class="result-text">That would be the same as <span id="cars-global-amount">taking</span></p>
+                <p class="big-number">??</p>
+                <p class="result-text">cars on the road.</p>
             </div>
         </div>
         <div id="share">
