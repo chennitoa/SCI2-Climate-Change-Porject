@@ -1,0 +1,99 @@
+body {
+    padding:50px;
+}
+
+.body-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button {
+    margin-left:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:goldenrod;
+    transition: ease-in-out 0.1s;
+}
+
+.button:hover {
+    transform:scale(0.95);
+    background-color:gold;
+}
+
+.calculator-header {
+    font-family:sans-serif;
+    background-color:lightgreen;
+    padding:5px;
+    margin-bottom:0px;
+}
+
+.close {
+    height:40px;
+    margin-left:auto;
+    margin-top:2px;
+    margin-right:10px;
+    transition: ease-in-out 0.1s;
+}
+
+.close:hover {
+    transform:scale(1.3);
+    filter:contrast(30%) brightness(200%) sepia(100%);
+}
+
+.food-label {
+    margin-top:15px;
+    margin-left:50px;
+}
+
+.food-name {
+    margin-left:30px;
+}
+
+.food-object {
+    background-color:burlywood;
+    display:flex;
+    flex-direction:row;
+    margin-top:5px;
+    margin-left:10px;
+    margin-bottom:5px;
+    margin-right:5px;
+}
+
+.food-select {
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.grams {
+    margin-left: 8px;
+}
+
+.input-box {
+    margin-top:15px;
+    margin-left:10px;
+    height:13px;
+    width:60px;
+}
+
+#bank {
+    display:none;
+}
+
+#food-types {
+    height:20px;
+}
+
+#options {
+    background-color:aliceblue;
+    display:flex;
+}
+
+#window {
+    overflow-y:scroll;
+    margin-bottom:20px;
+    background-color:lightskyblue;
+    height:500px;
+}
