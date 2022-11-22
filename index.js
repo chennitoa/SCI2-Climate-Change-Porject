@@ -53,4 +53,8 @@ calculateButton.addEventListener("click", () => {
         total += carbonValue[index] * foodItem.children[2].value / 100.0;
     };
     console.log(total);
+    let result = document.createElement("div");
+    result.classList.add("body-text");
+    result.innerText = "Your carbon total is the equivalent of: " + total + " kilograms of carbon dioxide";
+    document.body.appendChild(result);
 });
