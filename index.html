@@ -5,37 +5,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./images/icon.png">
     </head>
     <body>
-        <section id="bank">
+        <div id="bank">
             <div class="food-object">
                 <p class="body-text food-name">Food</p>
                 <label class="body-text food-label" for="mass">Amount:</label>
                 <input type="number" class="body-text input-box" id="mass" name="mass" value="100"></input>
                 <p class="body-text grams">grams</p>
-                <img class="close" src="X.png">
+                <img class="close" src="./images/X.png">
             </div>
-        </section>
-        <section id="main">
-            <h1>Food to Carbon Calculator</h1>
-            <h2>How much carbon are you producing?</h2>
+        </div>
+        <div id="heading">
+            <div class="head-container"></div>
+            <div class="main-header">
+                <p class="main-header-text">Carbon Cost of Food Calculator</p>
+            </div>
+            <div class="sub-header">
+                <p class="sub-header-text">Your Food and Your Carbon Footprint</p>
+            </div>   
+        </div>
+        <div id="calculator-main">
             <div id="calculator">
-                <h1 class="calculator-header">Carbon Calculator</h1>
+                <div id="calculator-top">
+                    <p class="calculator-header">Carbon Calculator</p>
+                </div>
                 <div id="window">
                 </div>
                 <div id="options">
                     <label for="food-types" class="body-text food-select">Select a food item:</label>
                     <select name="food-types" class="body-text food-select" id="food-types"></select>
-                    <div id="add-item" class="body-text button">
-                        <p>Add Item</p>
+                    <div id="add-item" class="button">
+                        <p class="button-text">Add Item</p>
                     </div>
-                    <div id="calculate" class="body-text button">
-                        <p>Calculate Carbon</p>
+                    <div id="calculate" class="button">
+                        <p class="button-text">Calculate Carbon</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="results">
+        </div>
+        <div id="results">
             <div id="cars">
 
             </div>
@@ -45,13 +55,10 @@
             <div id="percent">
 
             </div>
-        </section>
-        <section id="share">
+        </div>
+        <div id="share">
             
-        </section>
-        
-        
-
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
