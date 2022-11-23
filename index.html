@@ -12,8 +12,9 @@
             <div class="food-object">
                 <p class="body-text food-name">Food</p>
                 <label class="body-text food-label" for="mass">Amount:</label>
-                <input type="number" class="body-text input-box" id="mass" name="mass" value="100"></input>
-                <p class="body-text grams">grams</p>
+                <input type="number" class="body-text input-box" id="mass" name="mass" value="1"></input>
+                <p class="body-text" id="servings">units</p>
+                <p class="body-text" id="grams">grams</p>
                 <img class="close" src="./images/X.png">
             </div>
         </div>
@@ -58,24 +59,25 @@
             </div>
             <hr class="line-break"></hr>
             <div class="result-list" id="result-everyone">
-                <p class="result-text">If everyone ate this diet for a year,</p>
-                <p class="result-text">global carbon emissions would <span id="everyone-percent">increase</span> emissions by</p>
+                <p class="result-text">If everyone in the U.S. ate this diet for a year,</p>
+                <p class="result-text">U.S. carbon emissions would <span id="everyone-percent">increase</span> by</p>
                 <p class="big-number">??</p>
-                <p class="result-text">compared to data from 2021.</p>
+                <p class="result-text">compared to data from 2020.</p>
             </div>
             <hr class="line-break"></hr>
             <div class="result-list" id="result-cars">
                 <div id="result-cars-container"></div>
-                <p class="result-text">If you ate this diet for a year,</p>
-                <p class="result-text">it emit the same amount of carbon as approximately</p>
+                <p class="result-text">If you ate this diet for a year, it would release</p>
+                <p class="result-text">the equivalent amount of carbon dioxide as approximately</p>
                 <p class="big-number">??</p>
                 <p class="result-text">regular passenger cars.</p>
             </div>
             <hr class="line-break"></hr>
             <div class="result-list" id="result-cars-global">
-                <p class="result-text">That would be the same as <span id="cars-global-amount">taking</span></p>
+                <p class="result-text">If everyone in the U.S. adopted this diet, </p>
+                <p class="result-text">That would be the same as <span id="cars-global-amount1">taking</span> approximately</p>
                 <p class="big-number">??</p>
-                <p class="result-text">cars on the road.</p>
+                <p class="result-text">million <span id="cars-global-amount2">cars off</span> the road.</p>
             </div>
         </div>
         <div id="share">

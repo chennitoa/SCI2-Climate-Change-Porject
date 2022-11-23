@@ -122,12 +122,6 @@ body {
     background-color:#8fd168;
 }
 
-
-.grams {
-    margin-left:8px;
-    font-size:30px;
-}
-
 .head-container {
     position:relative;
     background-image: url("https://kellogggarden.com/wp-content/uploads/2017/07/Leafy-Vegetable-Garden.jpg");
@@ -231,6 +225,11 @@ body {
     height:100%;
 }
 
+#grams {
+    margin-left:8px;
+    font-size:30px;
+}
+
 #heading {
     margin-top:0px;
     height:420px;
@@ -308,11 +307,17 @@ body {
 
 #result-cars-global {
     text-align:center;
+    background-color:#d8cd67
 }
 
 #result-everyone {
     text-align:center;
     background-color:rgb(182, 117, 91);
+}
+
+#servings {
+    margin-left:8px;
+    font-size:30px;
 }
 
 #window {
