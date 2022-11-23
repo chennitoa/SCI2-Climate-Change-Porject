@@ -74,11 +74,19 @@ addItem.addEventListener("click", () => {
     windowMenu.appendChild(foodWindowClone);
 });
 
+let hasBeef = false;
+let amountBeef = 0;
+
 calculateButton.addEventListener("click", () => {
     let total = 0;  
+    amountBeef = 0;
     for (foodListItem of windowMenu.children) {
         if (foodListItem.tagName != "HR") {
             let index = foodTypeList.indexOf(foodListItem.children[0].innerText);
+            if (index == 0) {
+                hasBeef = true;
+                amountBeef += foodListItem.children[2].value;
+            }
             total += carbonValue[index] * foodListItem.children[2].value;
         }
     };
@@ -127,4 +135,36 @@ calculateButton.addEventListener("click", () => {
 
     results.style.display = "block";
     resultCarbon.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
+    let replaceBeef = document.querySelector("#replace-beef");
+    replaceBeef.style.display = "none";
+
+    if (hasBeef && amountBeef > 0.2) displayBeef();
 });
+
+function displayBeef() {
+    hasBeef = false;
+    let replaceBeef = document.querySelector("#replace-beef");
+
+    let beefCO2 = document.querySelector("#beef-co2");
+    let beefWater = document.querySelector("#beef-water");
+    let beefEnergy = document.querySelector("#beef-energy");
+    let beefNitro = document.querySelector("#beef-nitro");
+
+    let conversionValue = 23.3 / carbonValue[0];
+    
+    beefCO2.innerText = (amountBeef * carbonValue[0]).toFixed(2);
+    beefWater.innerText = (amountBeef * conversionValue * 51.8).toFixed(2);
+    beefEnergy.innerText = (amountBeef * conversionValue * 2095).toFixed(2);
+    beefNitro.innerText = (amountBeef * conversionValue * 161).toFixed(2);
+
+    let porkCost = document.querySelector("#pork-cost");
+    let chickenCost = document.querySelector("#chicken-cost");
+    let muttonCost = document.querySelector("#mutton-cost");
+
+    porkCost.innerText = (amountBeef * carbonValue[4]).toFixed(2);
+    chickenCost.innerText = (amountBeef * carbonValue[6]).toFixed(2);
+    muttonCost.innerText = (amountBeef * carbonValue[1]).toFixed(2);
+
+    replaceBeef.style.display = "block";
+}

@@ -6,6 +6,25 @@ body {
     vertical-align:baseline;
 }
 
+.alt-meat-text {
+    text-align:center;
+}
+
+.beef-cost-text-body {
+    margin-bottom:30px;
+}
+
+.beef-header-text {
+    margin-top:30px;
+    margin-bottom:30px;
+    font-family:Georgia, serif;
+    font-size:130px;
+}
+
+.beef-text {
+    font-size:30px;
+}
+
 .big-number {
     margin:10px;
     font-family:New Century Schoolbook, TeX Gyre Schola, serif;
@@ -62,6 +81,10 @@ body {
 .close:hover {
     transform:scale(1.3);
     filter:contrast(30%) brightness(200%) sepia(100%);
+}
+
+.column {
+    display:block;
 }
 
 .food-dropdown {
@@ -169,6 +192,12 @@ body {
     color:antiquewhite;
 }
 
+.medium-big-number {
+    margin:10px;
+    font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size:160px;
+}
+
 .result-list {
     padding:40px;
 }
@@ -176,6 +205,12 @@ body {
 .result-text {
     font-family:Trebuchet MS, sans-serif;
     font-size:60px;
+}
+
+.medium-number {
+    margin:10px;
+    font-family:New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size:90px;
 }
 
 .sub-header {
@@ -196,8 +231,48 @@ body {
     margin-right:30px;
 }
 
+#alt-meat {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-evenly;
+    font-size:20px;
+}
+
 #bank {
     display:none;
+}
+
+#beef-amount {
+    font-size:30px;
+}
+
+#beef-container {
+    z-index:-1;
+    background-image: url("https://img.hobbyfarms.com/wp-content/uploads/26110154/grassfed-beef_CAFNR.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:bottom center;
+    position:absolute;
+    height:100%;
+    width:100%;
+    bottom:0px;
+    left:0px;
+}
+
+#beef-container::before {
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px) brightness(55%);
+    pointer-events: none;
+}
+
+#beef-cost-text {
+    text-align:center;
 }
 
 #calculate {
@@ -239,6 +314,13 @@ body {
     background-color:#ade792;
     display:flex;
     border-radius:0px 0px 15px 15px;
+}
+
+#replace-beef {
+    display:none;
+    padding:50px;
+    position:relative;
+    color:antiquewhite;
 }
 
 #results {
