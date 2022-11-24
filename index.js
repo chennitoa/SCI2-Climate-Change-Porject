@@ -122,7 +122,6 @@ calculateButton.addEventListener("click", () => {
     let carsGlobalAmount1 = document.querySelector("#cars-global-amount1");
     let carsGlobalAmount2 = document.querySelector("#cars-global-amount2");
     let numCarsEveryone = ((percent / 100) * emissions - emissions) / 5.5;
-    console.log((percent / 100) * emissions - emissions);
     if (numCarsEveryone > 0) {
         carsGlobalAmount1.innerText = "putting";
         carsGlobalAmount2.innerText = "new passenger cars on";
